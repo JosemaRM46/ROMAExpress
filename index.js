@@ -325,5 +325,5 @@ app.get('/api/historial-precios/:productoId', (req, res) => {
 
 // Iniciar el servidor
 app.listen(port, () => {
-  console.log(`Servidor backend escuchando en http://localhost:${port}`);
+  console.log(`Servidor corriendo en el puerto ${port}`);
 });
