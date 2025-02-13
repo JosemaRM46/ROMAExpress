@@ -11,7 +11,7 @@ const corsOptions = {
   methods: ['GET', 'POST'],
 };
 
-const PORT = process.env.DB_PORT || 3001;
+const port = process.env.DB_PORT || 3001;
 
 app.use(cors(corsOptions));
 
