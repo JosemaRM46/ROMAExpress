@@ -320,6 +320,6 @@ app.get('/api/historial-precios/:productoId', (req, res) => {
 
 
 // Iniciar el servidor
-app.listen(3001, () => {
-  console.log('Servidor backend escuchando en http://localhost:3001');
+app.listen(port, () => {
+  console.log('Servidor backend escuchando en http://localhost:',{port});
 });
