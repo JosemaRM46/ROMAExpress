@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
 require('dotenv').config();
-const port = process.env.DB_PORT || 3001;
+
 const app = express();
 app.use(express.json());
 
@@ -10,6 +10,8 @@ const corsOptions = {
   origin: ['http://localhost:3000', 'https://z2nxvq18-3000.use2.devtunnels.ms'],
   methods: ['GET', 'POST'],
 };
+
+const PORT = process.env.DB_PORT || 3001;
 
 app.use(cors(corsOptions));
 
